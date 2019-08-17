@@ -39,80 +39,112 @@ li a:hover:not(.active) {
     background-color:red;
 }
 
+{
+    box-sizing: border-box;
+}
 
-
-.column{
-        float:left;
-        padding:10px;
-        height:300px;
-      }
-
-.left{
-        box-sizing: border-box;
-    
-    width:25%;  
-    height: 700px;
-    border-right: 10px solid white;
-      }
-
-.middle{
-        box-sizing: border-box;
-   
-    text-align: center;
-    width:25%;
-    border-right: 10px solid white;
-    height: 700px;
-
-      }
-
- .right{
-        width:50%;
-        height:300px;
-       }      
 .row{
-      
-      width:100%;  
 
-        }
+      display:flex;
+      width:100%;
+    }  
+
+
+.column {
+    
+    flex:50%;
+    padding: 10px;
+    height: 4000px;
+    
+    text-align:center;
+
+}
+
+
+  
+
+
+
+
 
 </style>
 
 </head>
 
 <body>
+<div class="header">
+<a href="https://www.nike.com/gb/en_gb/c/chelsea-fc?CP=EUNS_CHELSEAREF_BANNER_ECOM_SP18_TESTSITE_HEADER_SWOOSH"><img src="https://wallpapercave.com/wp/fdCqx0S.jpg" width="128" height="64"></a>
+<a href="http://www.carabaoenergy.co.uk/"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Carabao_Daeng.png/220px-Carabao_Daeng.png" width="64" height="64"></a>
+<a href="https://www.yokohama.co.uk/"><img src="images2/yokahamatyres.png" width="200" height="64"></a>
+<p>Sponsors of Chelsea</p>
+</div>
 
 <div id="nav-bar">
 	<ul id="nav">
 		<li><a href="home.html">Home</a></li>
-		<li><a href="news.asp">News</a></li>
+		<li><a hre="the scout.asp">The Scout</a></li>
 		<li><a href="shop-chelsea.html">Shop</a></li>
-		<li><a href="Scores,Table&Fixtures.html">Scores&Fixtures</a></li>
-		
+		<li><a href="Scores,&Fixtures.html">Scores&Fixtures</a></li>
+		<li><a href="table.html">Table</a></li>
 		<li><a href="chelsea-transfers.html">Transfers</a></li>
+        <li><a href="History.html">History</a></li>
 	</ul>
 </div>
 
 
-<h1>Follow all Chelsea's results,scores and check the table on this page</h1>
+<marquee behavior="scroll" direction="left"><font size="7">This is where you can keep up to date with Chelsea's Scores and Fixtures for 2018/19 season</font></marquee>
 
 <div class="row">
-  <div class="column left">
-    <h2>Scores</h2>
-    <p></p>
+  <div class="column" style="background-color:#073a8c;">
+    <h1>Scores</h1>
+<h2>July 2019</h2>
+<p>St Patrick's Athletic 0-4 Chelsea(Saturday 13th July)(Friendly)</p>
+<p>Bohemians 1-1 Chelsea(Wednesday 10th July)(Friendly)</p>
   </div>
-  <div class="column middle">
-    <h2>Fixtures</h2>
-    <p></p>
-  </div>
-  <div class="column right">
-    <h2>Table</h2>
-    <p></p>
+  
+
+  <div class="column" style="background-color:#ffdd00;">
+    <h1>Fixtures</h1>
+    <h2>July 2019</h2>
+     <p>Kawasaki Frontale vs Chelsea(Friday 19th July 2019: 11:00am)(J league World Challenge)</p>
+     <p>Barcelona vs Chelsea(Tuesday 23rd July 2019: 11:30am)(Friendly)</p>
+     <p>Reading vs Chelsea(Sunday 28th July 2019: 3:00pm)(Friendly)</p>
+     <p>Red Bull Salzburg vs Chelsea(Wednseday 31st July 2019: 7:00pm)(Friendly)</p>
+
+     <h2>August 2019</h2>
+      <p>Borussia Monchengladbach vs Chelsea(Saturday 3rd August 2019: 4:00pm)(Friendly)</p>
+      <p>Manchester United vs Chelsea(Sunday 11th August 2019: 4:00pm)(Premier League)</p>
+      <p>Liverpool vs Chelsea(Wednesday 14th August 2019: 8:00pm)(UEFA Super Cup)(Vodafone Park)</p>
+      <p>Chelsea vs Leicester(Sunday 18th August 2019: 4:30pm)(Premier League)</p>
+      <p>Norwich vs Chelsea(Saturday 24th August 2019: 12:30pm)(Premier League)</p>
+      <p>Chelsea vs Sheffield United(Saturday 31st August 2019: 3:00pm)(Premier League)</p>
+
+      <h2>September 2019</h2>
+
+      <p>Wolves vs Chelsea(Saturday 14th September 2019: 3:00pm)(Premier League)</p>
+      <p>Chelsea vs Liverpool(Sunday 22nd September 2019: 4:30pm)(Premier League)</p>
+      <p>Chelsea vs Brighton(Saturday 28th September 2019: 3:00pm)(Premier League)</p>
+    
   </div>
 </div>
 
 
 
 
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 
 
 

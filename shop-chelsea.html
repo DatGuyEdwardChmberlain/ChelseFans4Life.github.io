@@ -2,16 +2,19 @@
 
 
 <html>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-	
+	<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style type="text/css">
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body{
 
-	background-color:black;
+	
 	color:white;
 }
 
@@ -41,134 +44,214 @@ li a:hover:not(.active) {
     background-color:red;
 }
 
+
+
+
 .item-box {
   text-align: center;
   width: 350px;
-  height: 480px;
+  height: 500px;
   float: left;
-  background-color: rgba(200,200,200,0.5);
+  background-color:black;
   font-family: 'Open Sans', sans-serif;
   border: 5px solid white;
   border-radius: 10px;
   margin-right: 5px;
+  align-self:center;
+}
+
+* {box-sizing: border-box}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color:white;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color:black;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; 
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+} 
+
+.center{
+
+      display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    align-self:center;
+}
+.navbar a:hover {
+  background-color:white;
+}
+
+.navbar a.active {
+  background-color:white;
 }
 
 
+ }
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
 
 
- 
-
-
-
+.mySlides {display:none;}
 </style>
 
 </head>
 
 <body>
-
-<div id="nav-bar">
-	<ul id="nav">
+<div class="header">
+<a href="https://www.nike.com/gb/en_gb/c/chelsea-fc?CP=EUNS_CHELSEAREF_BANNER_ECOM_SP18_TESTSITE_HEADER_SWOOSH"><img src="https://wallpapercave.com/wp/fdCqx0S.jpg" width="128" height="64"></a>
+<a href="http://www.carabaoenergy.co.uk/"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Carabao_Daeng.png/220px-Carabao_Daeng.png" width="64" height="64"></a>
+<a href="https://www.yokohama.co.uk/"><img src="images2/yokahamatyres.png" width="200" height="64"></a>
+<p>Sponsors of Chelsea</p>
+</div>
+<div class="navbar">
+	<ul>
 		<li><a href="home.html">Home</a></li>
-		<li><a href="news.asp">News</a></li>
-		<li><a href="shop-chelse.html">Shop</a></li>
-		<li><a href="Scores,Table&Fixtures.asp">Scores&Fixtures</a></li>
-		<li><a href="Results.asp">Results</a></li>
+	
+		<li><a href="shop-chelsea.html">Shop</a></li>
+		<li><a href="Scores&fixtures.html">Scores&Fixtures</a></li>
+		<li><a href="Table.html">Table</a></li>
 		<li><a href="chelsea-transfers.html">Transfers</a></li>
-	</ul>
+	   <li><a href="history.html">History</a></li>
+  </ul>
+</div>
+<div class="navbar">
+ <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+
+  <a class="active" href="file:///D:/GitHub/ChelseFans4Life.github.io/kits1920.html">Kits</a> 
+  <a href="#">Training</a> 
+  <a href="#">Clothing</a> 
+  <a href="file:///D:/GitHub/ChelseFans4Life.github.io/accessories.html">Accessories</a>
+  
+</div>
 </div>
 
-
+<body background="https://static.standard.co.uk/s3fs-public/thumbnails/image/2019/07/23/12/barcelona-chelsea-230719x.jpg">
 <h1>You can buy here Chelsea kits and Accessories</h1>
 
+<div class="item-box" class="center">
+  <a href="file:///C:/Users/Richard/Documents/GitHub/ChelseFans4Life.github.io/thirdkitreview.html" width="300" height="300">Third Kit released-reviews</a>
+  <img src="http://www.footballshirtculture.com/images/2018/chelsea_18_19_nike_third_kit.jpg" width="300" height="300">
+</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/i2c9oKUs0Gs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<div class="item-box">
-
-    <h2>Home Shirt</h2>
-    <img src="images/homekit1819.jpg" width="300" height="300">
-    <p><a href="https://www.sportsdirect.com/nike-chelsea-home-shirt-2018-2019-377590?colcode=37759018">Adult:£64.99 16% discount</a></p>
-    <p><a href="https://www.sportsdirect.com/nike-chelsea-home-shirt-2018-2019-junior-378688?colcode=37868818">Junior:£47.99 16% discount</a></p>
-
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="https://www.soccerbox.com/media/catalog/product/cache/6853d38e2348cd42d7802dd0e99ff10a/c/h/chelsea-home-shirt-19-20-front_1.jpg" style="width:100%">
+  <img class="mySlides" src="https://4.bp.blogspot.com/-qbW33lxE1oU/XOBZhnsBpOI/AAAAAAAB5b8/SbVh53r171UGqtCBCWBR0KoavIgXzQTLQCLcBGAs/s738/chelsea-19-20-goalkeeper-kit-2.jpg" style="width:100%">
+  <img class="mySlides" src="https://www.soccerbox.com/media/catalog/product/cache/c499ae6789398aa252a1d6c02273c2d8/c/h/chelsea-kids-navy-strike-training-jersey-2019-20.jpg" style="width:100%">
 </div>
 
 
-<div class="item-box">
-  <h2 >Away Shirt</h2>
-  <img src="images/awaykit1819.jpg" width="300" height="300">
-  <p><a href="https://www.sportsdirect.com/nike-chelsea-away-shirt-2018-2019-377618?colcode=37761813">Adult:£64.99 16% discount</a></p>
-  <p><a href="https://www.sportsdirect.com/nike-chelsea-away-shirt-2018-2019-junior-378665?colcode=37866513">Junior:£47.99 17% discount</a></p>
+<script>
+var myIndex = 0;
+carousel();
 
-  
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000);
+}
+</script>
+<script>
+window.onscroll = function() {myFunction()};
 
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
 
-</div>
-
-<div class="item-box">
-  <h2>Training shirt</h2>
-  <img src="images/chelseasquad1819.png" width="300" height="300">
-  <p><a href="https://www.jdsports.co.uk/product/nike-chelsea-fc-201819-squad-shirt/053402/">Adult:£38.00</a></p>
-  <p><a href="https://www.jdsports.co.uk/product/blue-nike-chelsea-fc-squad-shirt-junior/053416/">Junior:£30.00</a></p>
-
-</div>
-
-<div class="item-box">
-  <h2>Anthem Jacket</h2>
-  <img src="images/anthemjacket.jpg" width="300"  height="300">
-  <p><a href="https://www.sportsdirect.com/nike-chelsea-anthem-jacket-2018-2019-mens-375206?colcode=37520650">Adult:£69.99 21% discunt</a></p>
-  <p><a href="https://www.sportsdirect.com/nike-chelsea-anthem-jacket-2018-2019-junior-375207?colcode=37520750">Junior:£49.99 20% discount</a></p>
-
-   
-
-</div>
-
-
-<div class="item-box">
-  <h2>Home Shorts</h2>
-  <img src="images/homeshorts.jpg" width="300" height="300">
-  <p><a href="https://www.sportsdirect.com/nike-chelsea-home-shorts-2018-2019-372345?colcode=37234518">Adult:£29.99 17% discount</a></p>
-  <p><a href="https://www.sportsdirect.com/nike-chelsea-home-shorts-2018-2019-junior-372344?colcode=37234418">Junior:£24.99 20% discount</a></p>
-
-</div>
-
-<div class="item-box">
-  <h2>Away Shorts</h2>
-  <img src="images/awayshorts.jpg" width="300"  height="300">
-  <p><a href="https://www.sportsdirect.com/nike-chelsea-away-shorts-2018-2019-372379?colcode=37237913">Adult:£29.99 17% discount</a></p>
-  <p><a href="https://www.sportsdirect.com/nike-chelsea-away-shorts-2018-2019-junior-372380?colcode=37238013">Junior:£19.99 20% discount</a></p>
-
-</div>
-
-<div class="item-box">
-  <h2>Home Socks</h2>
-  <img src="images/homesocks.jpg" width="300" height="300">
-  <p><a href="https://www.sportsdirect.com/nike-chelsea-home-socks-2018-2019-373195?colcode=37319501">£14.99 27% discount</a></p>
-
-</div>
-
-<div class="item-box">
-  <h2>Away Socks</h2>
-  <img src="images/awaysocks.jpg" width="300" height="300">
-  <p><a href="https://www.sportsdirect.com/nike-chelsea-home-socks-2018-2019-373195?colcode=37319501">£14.99 27% discount</a></p>
-
-</div>
-
-<div class="item-box">
-  <h2>Chelsea Phone Case</h2>
-  <img src="images/chelseaphonecase.jpg" width="300" height="300">
-  <p><a href="https://www.ebay.co.uk/itm/LOGO-CHELSEA-FC-Phone-case-cover-Samsung-iphone-cases/322590853579?_trkparms=aid%3D555017%26algo%3DPL.CASSINI%26ao%3D1%26asc%3D20160406134228%26meid%3Df6a2ce4835e5464c9a91171642aa0c1c%26pid%3D100625%26rk%3D1%26rkt%3D3%26%26itm%3D322590853579&_trksid=p2367844.c100625.m3682">£5.49</a></p>
-</div>
-
-<div class="item-box">
-  <h2>Chelsea Football</h2>
-  <img src="images/chelseaball.jpg" width="300" height="300">
-  <p><a href="https://www.ebay.co.uk/itm/Chelsea-F-C-Signature-Football-Size-5/222368933294?hash=item33c638a5ae%3Ag%3AhysAAOSwR6RaJTWI&_sacat=0&_nkw=chelsea+football&_from=R40&rt=nc&_trksid=p2334524.m570.l1313.TR12.TRC2.A0.H0.Xchelsea+football.TRS0">£11.99</a></p>
-
-</div>
-
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 
 
 
     
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
 
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
   
 
 
